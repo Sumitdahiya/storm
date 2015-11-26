@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Nov 25 22:01:54 PST 2015
+maven-resources-plugin-2.6.pom>jboss-public-repository-group=
+maven-resources-plugin-2.6.jar>central=
+maven-resources-plugin-2.6.pom>central=
+maven-resources-plugin-2.6.jar>jboss-public-repository-group=

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <!-- Parent -->
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>6</version>
+        <relativePath />
+    </parent>
+
+    <!-- Model Version -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Artifact Configuration -->
+    <groupId>org.jboss.arquillian.extension</groupId>
+    <artifactId>arquillian-drone-aggregator</artifactId>
+    <version>1.0.0.CR2</version>
+    <packaging>pom</packaging>
+    <name>Arquillian Drone Extension Agreggator</name>
+    <description>Extension for functional testing based on web view layer (Ajocado, Selenium, WebDriver)</description>
+
+    <developers>
+        <developer>
+            <name>Karel Piwko</name>
+            <email>kpiwko@redhat.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://git@github.com:arquillian/arquillian-extension-drone.git</connection>
+        <developerConnection>scm:git:ssh://github.com/arquillian/arquillian-extension-drone.git</developerConnection>
+        <url>git://github.com/arquillian/arquillian-extension-drone.git</url>
+    </scm>
+
+    <properties>
+        <!-- Versioning -->
+        <version.arquillian.core>1.0.0.CR4</version.arquillian.core>
+        <version.selenium.server>2.5.0</version.selenium.server>
+        <version.selenium>2.5.0</version.selenium>
+        <version.slf4j>1.5.10</version.slf4j>
+
+        <!-- override from parent -->
+        <version.release.plugin>2.1</version.release.plugin>
+        <maven.compiler.target>1.5</maven.compiler.target>
+        <maven.compiler.source>1.5</maven.compiler.source>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Modules -->
+    <modules>
+
+        <!-- Drone build chain-->
+        <module>build-config</module>
+        <module>drone-bom</module>
+        <module>drone-build</module>        
+
+        <!-- Drone modules -->
+        <module>drone-api</module>
+        <module>drone-spi</module>
+        <module>drone-configuration</module>
+        <module>drone-impl</module>
+        <module>drone-selenium-server</module>
+        <module>drone-selenium</module>
+        <module>drone-webdriver</module>        
+    </modules>
+
+</project>

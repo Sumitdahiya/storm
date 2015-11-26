@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Nov 25 22:02:12 PST 2015
+maven-plugin-api-2.0.6.jar>central=
+maven-plugin-api-2.0.6.pom>central=
+maven-plugin-api-2.0.6.pom>jboss-public-repository-group=

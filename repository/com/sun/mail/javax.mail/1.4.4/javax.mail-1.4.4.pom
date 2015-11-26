@@ -1,0 +1,9 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sun.mail</groupId>
+  <artifactId>javax.mail</artifactId>
+  <version>1.4.4</version>
+  <packaging>jar</packaging>
+  <name>javax.mail</name>
+  <description>Generated from Oracle JDeveloper</description>
+</project>
